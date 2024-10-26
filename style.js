@@ -15,6 +15,13 @@ console.log(`la parola '${parola}' è palindroma`)
 
 function isPalindrome(word){
 console.log(word)
+word = word.toLowerCase()
+const reversedWord = stringReverse(word)
+if( word === reversedWord){
+return true 
+}else{
+    return false
+}
 
 }
 
